@@ -1,0 +1,41 @@
+{
+  "project_name": "OMNI-SCRIPT-HARVESTER",
+  "version": "1.0.0",
+  "harvest_settings": {
+    "max_github_results": 10,
+    "max_youtube_results": 10,
+    "quarantine_dir": "storage/quarantine_vault",
+    "db_path": "storage/harvest_history.sqlite",
+    "min_github_stars": 0
+  },
+  "github_queries": [
+    "whatsapp bot baileys",
+    "script bot wa multi-device",
+    "bot wa jpm broadcast",
+    "whatsapp bot no enc",
+    "bot whatsapp panel pterodactyl"
+  ],
+  "youtube_keywords": [
+    "share script bot wa terbaru",
+    "sc bot wa no enc terbaru",
+    "script bot whatsapp mediafire",
+    "sc jpm terbaru panel pterodactyl",
+    "script bot wa termux free"
+  ],
+  "target_channels": [
+    {
+      "name": "Lynzz Official",
+      "channel_id": "UCxxxx",
+      "url": "https://www.youtube.com/@lynzzofficial"
+    }
+  ],
+  "telegram_settings": {
+    "enabled": false,
+    "send_zip_as_document": false
+  },
+  "github_staging_settings": {
+    "enabled": false,
+    "repo_url": "",
+    "branch": "staging"
+  }
+}

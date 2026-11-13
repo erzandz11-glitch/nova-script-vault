@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+storage/*.sqlite
+storage/quarantine_vault/
+*.log
+.DS_Store
