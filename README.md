@@ -28,16 +28,19 @@ omni-script-harvester/
 │   ├── deduplicator.py       # Engine SQLite pelacak riwayat anti-duplikat
 │   ├── github_harvester.py   # Mesin pencari & pengunduh massal GitHub API
 │   ├── yt_channel_dumper.py  # Mesin pemindai & ekstraktor link video YouTube
-│   └── mediafire_grabber.py  # Pengunduh direct MediaFire otomatis
+│   ├── mediafire_grabber.py  # Pengunduh direct MediaFire otomatis
+│   └── omni_titan_auditor.py # Engine audit keamanan backdoor, stealer & stabilitas
 ├── storage/
 │   ├── harvest_history.sqlite# Database riwayat unduhan
 │   ├── quarantine_vault/     # Folder karantina penyimpanan berkas .ZIP
-│   └── harvested_manifest.json # Ringkasan metadata publik untuk staging
+│   ├── harvested_manifest.json # Ringkasan metadata publik untuk staging
+│   └── audit_report.json     # Laporan audit komprehensif OMNI-TITAN
 ├── integrations/
 │   ├── telegram_bot.py       # Modul pengirim notifikasi kartu ke Telegram
 │   └── github_pusher.py      # Modul auto-commit & manifest exporter
 ├── tests/
-│   └── test_harvester.py     # Suite unit test otomatis
+│   ├── test_harvester.py     # Suite unit test harvester
+│   └── test_omni_titan_auditor.py # Suite unit test keamanan & adversarial auditor
 ├── START_HARVESTER.bat       # Peluncur satu-klik untuk Windows
 └── README.md                 # Dokumentasi operasional lengkap
 ```
@@ -56,7 +59,8 @@ Pilih opsi menu:
 * `2` : Panen Script dari YouTube (Ekstraksi MediaFire / Drive)
 * `3` : Panen Lengkap (GitHub + YouTube Sekaligus)
 * `4` : Cek Status Vault & Riwayat Karantina
-* `5` : Keluar
+* `5` : Jalankan OMNI-TITAN Security & Stability Audit
+* `6` : Keluar
 
 ### 2. Menjalankan via Command Line (Otomatis)
 * **Panen GitHub saja:**
