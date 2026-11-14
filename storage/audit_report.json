@@ -1,0 +1,705 @@
+{
+  "total": 31,
+  "verified": 20,
+  "suspicious": 0,
+  "rejected": 11,
+  "items": [
+    {
+      "filename": "GH_Abdodiab2005_levix_20261113_215540.zip",
+      "file_size": 6000692,
+      "security_score": 0,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] Baileys Auth Data Hijacking in levix-main/frontend/src/gateway/auth-submit.mjs",
+        "[CRITICAL] Baileys Auth Data Hijacking in levix-main/src/panel/session-store.cjs",
+        "[CRITICAL] Baileys Auth Data Hijacking in levix-main/tests/proxy.test.mjs",
+        "[CRITICAL] Baileys Auth Data Hijacking in levix-main/tests/session-consent.test.mjs",
+        "[CRITICAL] Baileys Auth Data Hijacking in levix-main/tests/session.test.mjs"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 400,
+      "has_package_json": true,
+      "package_name": "levix-frontend",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_AgwambaFavour_Vendor_os_20261113_215532.zip",
+      "file_size": 136461,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 27,
+      "has_package_json": true,
+      "package_name": "whatsapp-vendor-os",
+      "main_entry": "src/index.js",
+      "baileys_version": "WhiskeySockets Baileys ^7.0.0-rc14",
+      "node_version": "Node.js 18+",
+      "detected_category": "commerce",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Fitur Kasir & Toko Digital",
+        "Katalog Produk Otomatis",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_billionzp774-ops_knightbot-panel_20261113_215533.zip",
+      "file_size": 1908374,
+      "security_score": 65,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] Telegram Bot Session Exfiltration in knightbot-panel-main/commands/stickertelegram.js"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 135,
+      "has_package_json": true,
+      "package_name": "knightbot-panel",
+      "main_entry": "server.js",
+      "baileys_version": "WhiskeySockets Baileys ^v7.0.0-rc.9",
+      "node_version": "Node.js >=18.0.0",
+      "detected_category": "panel",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Automasi Panel Pterodactyl",
+        "Manajemen Server Bot"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_callmezext_enchant-tiktok-downloader_20261113_215555.zip",
+      "file_size": 364789,
+      "security_score": 30,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in enchant-tiktok-downloader-main/server.js",
+        "[CRITICAL] WhatsApp Session Folder Theft in enchant-tiktok-downloader-main/wa-bot.js"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 4,
+      "has_package_json": true,
+      "package_name": "enchant-downloader",
+      "main_entry": "server.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_Coconalas_Toxic-Botzz-V1---MD_20261113_215618.zip",
+      "file_size": 373373,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 38,
+      "has_package_json": true,
+      "package_name": "ArieTube",
+      "main_entry": "index.js",
+      "baileys_version": "Legacy Baileys ^4.1.0",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_diegoallies_encrypto-ai-whatsapp-bot_20261113_215554.zip",
+      "file_size": 436174,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 116,
+      "has_package_json": true,
+      "package_name": "encrypto-ai-whatsapp-bot",
+      "main_entry": "src/index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js >=20",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_divineXzealous_zealumi_20261113_215531.zip",
+      "file_size": 53987,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 35,
+      "has_package_json": true,
+      "package_name": "lumi-whatsapp-bot",
+      "main_entry": "server.js",
+      "baileys_version": "WhiskeySockets Baileys ^7.0.0-rc.9",
+      "node_version": "Node.js >=22.12",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_donmahni65-sudo_Dark-ace-nemesis-prime-tech-bug-bot_20261113_215626.zip",
+      "file_size": 96477,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_exo-cyber_exo-cyber-_20261113_215544.zip",
+      "file_size": 31918,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 44,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_gaqqunone_WhatsappBOTpanelJTB_20261113_215633.zip",
+      "file_size": 4614909,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 7,
+      "has_package_json": true,
+      "package_name": "Pann",
+      "main_entry": "./cpsetting/connect.js",
+      "baileys_version": "Legacy Baileys ^4.4.0",
+      "node_version": "Node.js 18+",
+      "detected_category": "panel",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Automasi Panel Pterodactyl",
+        "Manajemen Server Bot",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_HisokaLabs_hisoka-waweb_js_20261113_215548.zip",
+      "file_size": 29735,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 29,
+      "has_package_json": true,
+      "package_name": "hisoka-waweb.js",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_JastinXyz_whatsactyl_20261113_215635.zip",
+      "file_size": 90041,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 27,
+      "has_package_json": true,
+      "package_name": "whatsactyl",
+      "main_entry": "index.js",
+      "baileys_version": "Legacy Baileys github:adiwajshing/baileys",
+      "node_version": "Node.js 18+",
+      "detected_category": "panel",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Automasi Panel Pterodactyl",
+        "Manajemen Server Bot",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_jhondzn03-bit_ZENITSU-BOT_20261113_215524.zip",
+      "file_size": 777617,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 44,
+      "has_package_json": true,
+      "package_name": "zenitsu-bot",
+      "main_entry": "index.js",
+      "baileys_version": "WhiskeySockets Baileys 7.0.0-rc14",
+      "node_version": "Node.js >=20",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_karsstore1-pixel_MBUH-STORE_20261113_215628.zip",
+      "file_size": 399,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "commerce",
+      "extracted_features": [
+        "Fitur Kasir & Toko Digital",
+        "Katalog Produk Otomatis",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_kyyou-ze_Bot-ai-yuzaki-tsukasa_20261113_215529.zip",
+      "file_size": 4158644,
+      "security_score": 0,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in Bot-ai-yuzaki-tsukasa-main/lib/engine/plugins.js",
+        "[CRITICAL] Baileys Auth Data Hijacking in Bot-ai-yuzaki-tsukasa-main/lib/engine/plugins.js",
+        "[CRITICAL] WhatsApp Session Folder Theft in Bot-ai-yuzaki-tsukasa-main/lib/services/scraper.js"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 1650,
+      "has_package_json": true,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "games",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Multi-Command Baileys",
+        "Menu Interaktif Lengkap"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_LutfiCoY_Simple-Bot-WhatsApp-_20261113_215556.zip",
+      "file_size": 42426,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 22,
+      "has_package_json": true,
+      "package_name": "mm",
+      "main_entry": "main.js",
+      "baileys_version": "WhiskeySockets Baileys ^7.0.0-rc.5",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_msyafa-alg_bot-telegram-paymentgateaway_20261113_215630.zip",
+      "file_size": 483248,
+      "security_score": 55,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in bot-telegram-paymentgateaway-main/bot.js",
+        "[SUSPICIOUS] Hex Escaped Character Sequences in bot-telegram-paymentgateaway-main/bot.js (216 matches)"
+      ],
+      "obfuscation_count": 216,
+      "total_js_files": 4,
+      "has_package_json": true,
+      "package_name": "panel-auto-bot",
+      "main_entry": "bot.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "commerce",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Fitur Kasir & Toko Digital",
+        "Katalog Produk Otomatis"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_nekonaru_rynnbot_20261113_215542.zip",
+      "file_size": 3185821,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 40,
+      "has_package_json": true,
+      "package_name": "rynnbot",
+      "main_entry": "start.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js >=20.0.0",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_NIKOSTORE733_Niko_20261113_215631.zip",
+      "file_size": 1776297,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_pasquawisdom2007-beep_SUKUNA_MD_20261113_215536.zip",
+      "file_size": 13271467,
+      "security_score": 20,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] Telegram Bot Session Exfiltration in SUKUNA_MD-main/commands/media/tgsticker.js",
+        "[SUSPICIOUS] Javascript-Obfuscator Hex Variables in SUKUNA_MD-main/lib/creator.js (18 matches)",
+        "[CRITICAL] Baileys Auth Data Hijacking in SUKUNA_MD-main/lib/sessionManager.js"
+      ],
+      "obfuscation_count": 18,
+      "total_js_files": 1283,
+      "has_package_json": true,
+      "package_name": "sukuna-md",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js >=20.0.0",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_rakarmp_KitagawaBotz_20261113_215603.zip",
+      "file_size": 6699160,
+      "security_score": 35,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] Telegram Bot Session Exfiltration in KitagawaBotz-master/lib/telestick.js",
+        "[SUSPICIOUS] Javascript-Obfuscator Hex Variables in KitagawaBotz-master/lib/welcome.js (1342 matches)",
+        "[SUSPICIOUS] Hex Escaped Character Sequences in KitagawaBotz-master/lib/welcome.js (6 matches)",
+        "[SUSPICIOUS] Obfuscator Shift Function in KitagawaBotz-master/lib/welcome.js (23 matches)"
+      ],
+      "obfuscation_count": 1371,
+      "total_js_files": 48,
+      "has_package_json": true,
+      "package_name": "Haruka-Md",
+      "main_entry": "haruka.js",
+      "baileys_version": "Legacy Baileys npm:baileys@^6.0.9",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_Rakhasx_MARCELEVEN-MD_20261113_215559.zip",
+      "file_size": 127005,
+      "security_score": 0,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "Corrupted ZIP file (BadZipFile)"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [],
+      "error": null
+    },
+    {
+      "filename": "GH_razzaqinspires_whiskay-bot_20261113_214925.zip",
+      "file_size": 1046317,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 240,
+      "has_package_json": true,
+      "package_name": "whiskay-bot",
+      "main_entry": "src/index.js",
+      "baileys_version": "WhiskeySockets Baileys 7.0.0-rc14",
+      "node_version": "Node.js >=20",
+      "detected_category": "games",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Multi-Command Baileys",
+        "Menu Interaktif Lengkap",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_revanwiralaga7-design_wahost-pterodactyl_20261113_215624.zip",
+      "file_size": 69881,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 10,
+      "has_package_json": true,
+      "package_name": "wa-hosting-backend",
+      "main_entry": "dist/index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "panel",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Automasi Panel Pterodactyl",
+        "Manajemen Server Bot",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_RiskiRj_ANYA-MULTIDEVICE_20261113_215606.zip",
+      "file_size": 37714511,
+      "security_score": 55,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in ANYA-MULTIDEVICE-master/index.js",
+        "[SUSPICIOUS] Javascript-Obfuscator Hex Variables in ANYA-MULTIDEVICE-master/index.js (1318 matches)"
+      ],
+      "obfuscation_count": 1318,
+      "total_js_files": 39,
+      "has_package_json": true,
+      "package_name": "ANYA-MD",
+      "main_entry": "index.js",
+      "baileys_version": "Legacy Baileys ^4.1.0",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_ryuhandev_rimubase_20261113_215558.zip",
+      "file_size": 38587,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 25,
+      "has_package_json": true,
+      "package_name": "Rimuru Base",
+      "main_entry": "index.js",
+      "baileys_version": "WhiskeySockets Baileys npm:@ryuhan/baileys",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_Vamzz-spectre_botbuypanel_20261113_215623.zip",
+      "file_size": 258977,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 25,
+      "has_package_json": true,
+      "package_name": "botbuypanel",
+      "main_entry": "index.js",
+      "baileys_version": "Legacy Baileys npm:baileys@7.0.0-rc.9",
+      "node_version": "Node.js 18+",
+      "detected_category": "panel",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Automasi Panel Pterodactyl",
+        "Manajemen Server Bot",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_YangJunMing08_GacorbotMD-v1_5_20261113_215600.zip",
+      "file_size": 1207,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "GH_YangJunMing12_GabutBot-MD_20261113_215600.zip",
+      "file_size": 8085407,
+      "security_score": 65,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in GabutBot-MD-main/adrian.js"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 39,
+      "has_package_json": true,
+      "package_name": "Adrian-MD",
+      "main_entry": "index.js",
+      "baileys_version": "Legacy Baileys npm:baileys",
+      "node_version": "Node.js 18+",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    },
+    {
+      "filename": "YT_APK_BUG_FREE_Jester_Project_Terbaru_Vers_20261113_215659.zip",
+      "file_size": 28809859,
+      "security_score": 100,
+      "verdict": "VERIFIED_SAFE",
+      "findings": [],
+      "obfuscation_count": 0,
+      "total_js_files": 0,
+      "has_package_json": false,
+      "package_name": "",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js 18+",
+      "detected_category": "commerce",
+      "extracted_features": [
+        "Fitur Kasir & Toko Digital",
+        "Katalog Produk Otomatis",
+        "100% No-Backdoor & Kode Bersih"
+      ],
+      "error": null
+    },
+    {
+      "filename": "YT_SCRIPT_BOT_WHATSAPP_VEMZO_MD___Bot_Whats_20261113_215747.zip",
+      "file_size": 12350148,
+      "security_score": 65,
+      "verdict": "REJECTED_DANGEROUS",
+      "findings": [
+        "[CRITICAL] WhatsApp Session Folder Theft in src/scraper/terabox.js"
+      ],
+      "obfuscation_count": 0,
+      "total_js_files": 843,
+      "has_package_json": true,
+      "package_name": "vemzo-md",
+      "main_entry": "index.js",
+      "baileys_version": "Baileys MD v6+",
+      "node_version": "Node.js >=20.0.0",
+      "detected_category": "media",
+      "extracted_features": [
+        "Struktur Modul Lengkap (package.json)",
+        "Downloader Multi-Platform (TT/YT/IG)",
+        "Media Converter"
+      ],
+      "error": null
+    }
+  ]
+}

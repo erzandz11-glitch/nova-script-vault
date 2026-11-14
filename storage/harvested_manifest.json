@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T22:09:41.934261",
+  "last_updated": "2026-11-14T11:52:20.127376",
   "total_scripts": 50,
   "scripts": [
     {
@@ -597,8 +597,8 @@
       "local_filename": "YT_SCRIPT_BOT_WHATSAPP_VEMZO_MD___Bot_Whats_20261113_215747.zip",
       "file_size": 12350148,
       "harvested_at": "2026-11-13T21:58:00.477362",
-      "audit_status": "unreviewed",
-      "notes": "Found MediaFire Link"
+      "audit_status": "rejected",
+      "notes": "Score: 65/100 | Findings: 1 | Cat: media"
     },
     {
       "id": "youtube:XYYAOhj-BhE",

@@ -18,6 +18,7 @@ if os.path.exists(env_path):
 from modules.deduplicator import Deduplicator
 from modules.github_harvester import GitHubHarvester
 from modules.yt_channel_dumper import YouTubeDumper
+from modules.omni_titan_auditor import OmniTitanAuditor
 from integrations.telegram_bot import TelegramNotifier
 from integrations.github_pusher import GitHubPusher
 
@@ -99,6 +100,32 @@ def run_youtube_harvest(config, dedup, notifier):
     print(f"\n[OK] Selesai! Berhasil menjaring {total_new} script dari YouTube.")
     return total_new
 
+def run_audit(config, dedup, notifier):
+    print("\n[+] Menjalankan OMNI-TITAN Security & Stability Audit...")
+    q_dir = resolve_path(config.get("harvest_settings", {}).get("quarantine_dir", "storage/quarantine_vault"))
+    db_path = resolve_path(config.get("harvest_settings", {}).get("db_path", "storage/harvest_history.sqlite"))
+    auditor = OmniTitanAuditor(db_path=db_path, quarantine_dir=q_dir)
+    
+    summary = auditor.audit_all_quarantine()
+    print(f"\n[HASIL AUDIT OMNI-TITAN]")
+    print(f"Total Diperiksa: {summary['total']}")
+    print(f"🟢 VERIFIED SAFE: {summary['verified']}")
+    print(f"🟡 SUSPICIOUS:    {summary['suspicious']}")
+    print(f"🔴 REJECTED:      {summary['rejected']}")
+    print("-" * 65)
+
+    for it in summary["items"]:
+        symbol = "🟢" if it["verdict"] == "VERIFIED_SAFE" else ("🟡" if it["verdict"] == "SUSPICIOUS_OBFUSCATED" else "🔴")
+        print(f"{symbol} [{it['security_score']}/100] {it['filename'][:40]} | Kat: {it['detected_category']}")
+        if it["findings"]:
+            for f in it["findings"][:2]:
+                print(f"     ⚠️ {f}")
+
+    print("-" * 65)
+    notifier.send_audit_summary(summary)
+    print("[OK] Laporan audit berhasil dikirim ke Telegram Bot.")
+    return summary
+
 def show_status(dedup):
     total = dedup.count_total()
     items = dedup.get_all_harvested(limit=15)
@@ -122,6 +149,7 @@ def main():
     parser.add_argument("--youtube", action="store_true", help="Jalankan panen dari YouTube")
     parser.add_argument("--all", action="store_true", help="Panen dari semua sumber")
     parser.add_argument("--status", action="store_true", help="Tampilkan status database vault")
+    parser.add_argument("--audit", action="store_true", help="Jalankan OMNI-TITAN Security Audit pada vault")
     args = parser.parse_args()
 
     if args.github:
@@ -140,6 +168,10 @@ def main():
     elif args.status:
         show_status(dedup)
         return
+    elif args.audit:
+        run_audit(config, dedup, notifier)
+        pusher.export_manifest(dedup.get_all_harvested())
+        return
 
     # Mode Menu Interaktif jika dijalankan tanpa argumen
     while True:
@@ -148,9 +180,10 @@ def main():
         print("2. Panen Script dari YouTube (Ekstraksi MediaFire / Drive)")
         print("3. Panen Lengkap (GitHub + YouTube)")
         print("4. Cek Status Vault & Daftar Script Karantina")
-        print("5. Keluar")
+        print("5. Jalankan OMNI-TITAN Security & Stability Audit")
+        print("6. Keluar")
         
-        choice = input("\nMasukkan pilihan [1-5]: ").strip()
+        choice = input("\nMasukkan pilihan [1-6]: ").strip()
         if choice == "1":
             run_github_harvest(config, dedup, notifier)
             pusher.export_manifest(dedup.get_all_harvested())
@@ -164,6 +197,9 @@ def main():
         elif choice == "4":
             show_status(dedup)
         elif choice == "5":
+            run_audit(config, dedup, notifier)
+            pusher.export_manifest(dedup.get_all_harvested())
+        elif choice == "6":
             print("\nSampai jumpa, Sir!")
             break
         else:

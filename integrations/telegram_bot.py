@@ -52,6 +52,28 @@ class TelegramNotifier:
         )
         return self._send_message(msg)
 
+    def send_audit_summary(self, audit_summary: dict) -> bool:
+        """
+        Mengirimkan laporan hasil audit keamanan OMNI-TITAN ke Telegram.
+        """
+        if not self.is_configured():
+            return False
+
+        total = audit_summary.get("total", 0)
+        verified = audit_summary.get("verified", 0)
+        suspicious = audit_summary.get("suspicious", 0)
+        rejected = audit_summary.get("rejected", 0)
+
+        msg = (
+            f"🔱 <b>OMNI-TITAN AUDIT REPORT PARIPURNA</b>\n\n"
+            f"📊 <b>Total Script Diuji:</b> {total}\n"
+            f"🟢 <b>Verified Safe (Lolos):</b> {verified}\n"
+            f"🟡 <b>Suspicious (Obfuscated):</b> {suspicious}\n"
+            f"🔴 <b>Rejected (Backdoor/Rusak):</b> {rejected}\n\n"
+            f"🛡️ <i>Semua skrip yang lolos 'Verified Safe' telah disaring dari backdoor/stealer dan siap dipublikasikan ke NOVA Vault!</i>"
+        )
+        return self._send_message(msg)
+
     def _send_message(self, html_text: str) -> bool:
         url = f"https://api.telegram.org/bot{self.bot_token}/sendMessage"
         payload = json.dumps({
